@@ -1,0 +1,7 @@
+<button (click)="getYears()">{{header}}</button>
+<p>Vehicle: {{finalValue}}</p>
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let value of years" style="margin-right:5px">
+    <button (click)="year(value, typeFlag)">{{value}}</button>
+  </div>
+</div>
